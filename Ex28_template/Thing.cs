@@ -9,6 +9,8 @@ namespace Inheritance
     /// <summary>
     /// 物体
     /// </summary>
+    
+    //１番最初の基底クラス
     class Thing
     {
         readonly public string name;
