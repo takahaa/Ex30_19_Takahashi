@@ -11,8 +11,10 @@ namespace Inheritance
     /// </summary>
     class Life:Thing
     {
-        readonly private string _name;
-        readonly private DateTime _birthDay = new DateTime();
+        
+        readonly public DateTime _birthDay = new DateTime();
+
+
         public DateTime birthday
         {
             get { return _birthDay; }
@@ -21,9 +23,11 @@ namespace Inheritance
         {
             get { return _name; }
         }
-        public Life(DateTime bd ,string n, float  w = 0, float h = 0, float d = 0 ):base(n,w,h,d)
+        public Life( DateTime bd,string n, float w = 0, float h = 0, float d = 0, float we = 0, float s = 0, float l = 0) : base(n,w,h,d,we,s,l)
         {
-            this._birthDay = bd;
+            _birthDay = birthday;
+            //this._birthDay = bd;
         }
+        
     }
 }

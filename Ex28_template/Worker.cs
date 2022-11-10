@@ -8,9 +8,14 @@ namespace Inheritance
 {
     class Worker : Person
     {
-        public Worker (DateTime bd, string n, float w = 0, float h = 0, float d = 0) : base(bd, n, w, h, d)
+        public readonly string _industry;
+        public string industry
         {
-
+            get { return _industry; }
+        }
+        public Worker (int a,DateTime bd, string n,string i) : base(a, bd, n)
+        {
+            _industry = i;
         }
     }
 }

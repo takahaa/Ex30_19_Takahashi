@@ -8,11 +8,8 @@ namespace Inheritance
 {
     class Person:Animal
     {
-        public Person(DateTime bd, string n, float w = 0, float h = 0, float d = 0) : base(bd, n, w, h, d)
-        {
 
-        }
-        new public void SelfIntroduction()
+        public Person(int a,DateTime bd, string n, float w = 0, float h = 0, float d = 0) : base(a,bd, n, w, h, d)
         {
 
         }
