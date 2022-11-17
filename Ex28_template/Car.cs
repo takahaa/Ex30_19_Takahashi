@@ -6,11 +6,21 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    class Car : Vehicle
-    {
-        public Car (DateTime bd, string n, float w = 0, float h = 0, float d = 0) : base(bd, n, w, h, d)
-        {
+    /// <summary>
+    /// 車
+    /// </summary>
 
+    class Car : Lifeless
+    {
+        //色
+        public string _carcolor;
+        public string carcolor
+        {
+            get { return _carcolor; }
+        }
+        public Car(string n, string cc, float w, float h, float d, float we, float si) : base(n, w, h, d,we,si)
+        {
+            _carcolor = cc;
         }
 
     }

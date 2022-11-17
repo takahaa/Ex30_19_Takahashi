@@ -6,17 +6,22 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
+    /// <summary>
+    /// 猫
+    /// </summary>
+
     class Cat : Animal
     {
-        public string _typecat;
-        public string typecat
+        //猫の性格
+        public string _character;
+        public string character
         {
-            get { return _typecat; }
+            get { return _character; }
         }
 
-        public Cat (int a,DateTime bd, string n,string t ) : base(a,bd, n)
+        public Cat (int a,DateTime bd, string n,int l,string c ) : base(a,bd, n,l)
         {
-            _typecat = t;
+            _character = c;
         }
     }
 }

@@ -8,12 +8,17 @@ namespace Inheritance
 {
     class Worker : Person
     {
+        /// <summary>
+        /// 社会人
+        /// </summary>
+
+        //業界
         public readonly string _industry;
         public string industry
         {
             get { return _industry; }
         }
-        public Worker (int a,DateTime bd, string n,string i) : base(a, bd, n)
+        public Worker (int a,DateTime bd, string n, int l, string i) : base(a, bd, n,l)
         {
             _industry = i;
         }

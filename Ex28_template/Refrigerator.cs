@@ -6,11 +6,21 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
+    /// <summary>
+    /// 冷蔵庫
+    /// </summary>
+
     class Refrigerator : Appliances
     {
-        public Refrigerator (DateTime bd, string n, float w = 0, float h = 0, float d = 0) : base(bd, n, w, h, d)
+        //ドアの数
+        public int _doornum;
+        public int doornum
         {
-
+            get { return _doornum; }
+        }
+        public Refrigerator(string n, float w, float h, float d, float we, float si,int dn) : base(n, w, h, d, we, si)
+        {
+            _doornum = dn;
         }
     }
 }

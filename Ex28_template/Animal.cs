@@ -8,13 +8,17 @@ namespace Inheritance
 {
     class Animal : Life
     {
+        /// <summary>
+        /// 動物
+        /// </summary>
+
         public int _age; //年齢
         public int age
         {
             get { return _age; }
         }
 
-        public Animal(int a,DateTime bd, string n, float w = 0, float h = 0, float d = 0) : base(bd, n, w, h, d)
+        public Animal(int a,DateTime bd, string n, int l) : base(bd,n,l)
         {
             _age = a;
         }

@@ -6,11 +6,21 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    class Appliances : Lifeless
-    { 
-        public Appliances (DateTime bd, string n, float w = 0, float h = 0, float d = 0) : base(bd, n, w, h, d)
-        {
+    /// <summary>
+    /// 家電
+    /// </summary>
 
+    class Appliances : Lifeless
+    {
+        //入れる箱の大きさ
+        public float _box;
+        public float box
+        {
+            get { return _box; }
+        }
+        public Appliances(string n, float w, float h, float d, float we, float si) : base(n, w, h, d, we, si)
+        {
+            _box = si;
         }
 
     }

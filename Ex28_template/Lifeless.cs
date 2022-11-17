@@ -11,19 +11,17 @@ namespace Inheritance
     /// </summary>
     class Lifeless : Thing
     {
-        readonly private string _name;
-        readonly private DateTime _birthDay = new DateTime();
-        public DateTime birthday
-        {
-            get { return _birthDay; }
-        }
         public string name
         {
             get { return _name; }
         }
-        public Lifeless(DateTime bd, string n, float w = 0, float h = 0, float d = 0) : base(n, w, h, d)
+        public Lifeless( string n, float w , float h , float d ,float we , float si ) : base(n, w, h, d, we,si)
         {
-            this._birthDay = bd;
+            _width = w;
+            _height = h;
+            _depth = d;
+            _weight = we;
+            _size = w + h + d;
         }
     }
 }

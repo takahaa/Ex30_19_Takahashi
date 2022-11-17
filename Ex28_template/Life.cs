@@ -13,7 +13,7 @@ namespace Inheritance
     {
         
         readonly public DateTime _birthDay = new DateTime();
-
+        public int _life_span;
 
         public DateTime birthday
         {
@@ -23,10 +23,28 @@ namespace Inheritance
         {
             get { return _name; }
         }
-        public Life( DateTime bd,string n, float w = 0, float h = 0, float d = 0, float we = 0, float s = 0, float l = 0) : base(n,w,h,d,we,s,l)
+
+        public int life_span
         {
-            _birthDay = birthday;
-            //this._birthDay = bd;
+            get { return _life_span; }
+        }
+
+        public bool GetBirthdayToday()
+        {
+            if(birthday.Date == DateTime.Today.Date)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public Life( DateTime bd,string n, int l) : base(n)
+        {
+            _birthDay = bd;
+            _life_span = l;
         }
         
     }

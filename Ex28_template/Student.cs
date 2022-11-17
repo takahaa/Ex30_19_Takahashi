@@ -19,7 +19,7 @@ namespace Inheritance
         }
 
 
-        public Student(int a,DateTime bd, string n, int num) : base(a,bd, n,num)
+        public Student(int a,DateTime bd, string n, int num, int l) : base(a,bd, n,l)
         {
             _number = num;
         }

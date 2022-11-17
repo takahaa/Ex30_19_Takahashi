@@ -6,11 +6,21 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
+    /// <summary>
+    /// 魚
+    /// </summary>
+
     class Fish : Animal
     {
-        public Fish (int a ,DateTime bd, string n, float w = 0, float h = 0, float d = 0) : base(a,bd, n, w, h, d)
+        //生息地
+        public string _habitat;
+        public string habitat
         {
-
+            get { return _habitat; }
+        }
+        public Fish (int a ,DateTime bd, string n,int l,string ha) : base(a,bd, n,l)
+        {
+            _habitat = ha;
         }
     }
 }
