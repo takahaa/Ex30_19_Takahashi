@@ -21,6 +21,7 @@ namespace Inheritance
             _height = h;
             _depth = d;
             _weight = we;
+            //入れる箱の大きさを求める
             _size = w + h + d;
         }
     }
