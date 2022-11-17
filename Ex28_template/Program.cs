@@ -6,9 +6,9 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            Student student = new Student(19,DateTime.Today,"木西 内代", 2001,80);
+            Student student = new Student(18,DateTime.Today,"taka", 2001,80);
             Console.WriteLine($"名前：{student.name}、年齢：{student.age}、今日は誕生日か({student.GetBirthdayToday()})、学籍番号：{student.number}、寿命：{student.life_span}年");
-            Worker worker = new Worker(28,DateTime.Today, "類家 毛馬子",80, "スタントマン");
+            Worker worker = new Worker(28,DateTime.Today, "山田 太郎",80, "スタントマン");
             Console.WriteLine($"名前：{worker.name}、年齢：{worker.age}、今日は誕生日か({student.GetBirthdayToday()})、職業：{worker.industry}、寿命：{worker.life_span}年");
             Fish fish = new Fish(0, DateTime.Today, "イトウ", 20, "阿寒湖");
             Console.WriteLine($"魚の種類：{fish.name}、寿命：{fish.life_span}年、生息地：{fish.habitat}");
