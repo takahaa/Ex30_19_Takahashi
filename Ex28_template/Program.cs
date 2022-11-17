@@ -17,7 +17,7 @@ namespace Inheritance
             Insect insect = new Insect(0, DateTime.Today, "バナナムシ", 9, "黄色");
             Console.WriteLine($"昆虫の種類：{insect.name}、寿命：{insect.life_span}カ月、色：{insect.color}");
             Lizard lizard = new Lizard(0, DateTime.Today, "ニホントカゲ", 6, "脂がのっていて旨い");
-            Console.WriteLine($"トカゲの種類：{lizard.name}、寿命：{lizard.life_span}、味：{lizard.taste}");
+            Console.WriteLine($"トカゲの種類：{lizard.name}、寿命：{lizard.life_span}年、味：{lizard.taste}");
             Car car = new Car("ラフェスタ", "白",0,0,0,1805,0);
             Console.WriteLine($"車の名前：{car.name}、車の色：{car.carcolor}、重さ{car.weight}");
             Refrigerator refrigerator = new Refrigerator("東芝",685,745,1833,1805,110,6);
